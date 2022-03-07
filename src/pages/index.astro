@@ -16,14 +16,13 @@ I also like playing guitar, making 3d art, lawn tennis and singing (even though 
 	<meta name="author" content="Tejas Agarwal">
 	<meta name="description" content="High school student, tech & open-source enthusiast.">
 	<meta name="theme-color" content="#ffc2c0">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="https://cloud-mj46j20wc-hack-club-bot.vercel.app/0favicon.ico" />
 	<style global>
 		@import "../styles/global.css";
 	 	@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap');
 	</style>
 	<style>
 		.header {
-			height: 10vh;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -48,6 +47,7 @@ I also like playing guitar, making 3d art, lawn tennis and singing (even though 
 			line-height: 30px;
 			color:#FFE9E8 ;
 			margin-bottom: auto;
+			text-transform: lowercase;
 		}
 
 		.contact__header {
@@ -60,7 +60,7 @@ I also like playing guitar, making 3d art, lawn tennis and singing (even though 
 		.bar {
 			width: 70px;
 			height: 0px;
-			border: 5px solid #FFC2C0;
+			border: 3px solid #FFC2C0;
 			box-sizing: border-box;
 		}
 
@@ -81,7 +81,6 @@ I also like playing guitar, making 3d art, lawn tennis and singing (even though 
 			.header {
 				flex-direction: column;
 				align-items: initial;
-				height: 20vh;
 			}	
 
 			.img {
@@ -106,10 +105,10 @@ I also like playing guitar, making 3d art, lawn tennis and singing (even though 
 			}
 
 			.footer {
-				font-size: 20px;
+				font-size: 17px;
 				margin-top: 5rem;
 				opacity: 0.7;
-				margin-bottom: 2rem;
+				padding-bottom: 2rem;
 			}
 		}
 
@@ -121,9 +120,7 @@ I also like playing guitar, making 3d art, lawn tennis and singing (even though 
 		<img src="https://cloud-8qtp4x8ro-hack-club-bot.vercel.app/0image.png" alt="Image" class="img" />
 		<span class="heading">Tejas Agarwal</span>
 	</div>
-	<div class="content">
-		{about}
-	</div>
+	<div class="content" set:html={about}></div>
 	<div class="contact__header">
 		<div class="bar"></div>
 		<div class="heading">get in touch</div>
@@ -132,7 +129,7 @@ I also like playing guitar, making 3d art, lawn tennis and singing (even though 
 	find me on <span class="link"><a href="https://github.com/tejasag">github</a></span>, <span class="link"><a href="https://twitter.com/tejasag0">twitter</a></span> or shoot me an <span class="link"><a href="mailto:tejas.agarwal.bly@gmail.com">email!</a></span>
 	</div>
 	<div class="footer">
-		made w/ ♥ by tejas • copyleft @tejasag
+		made w/ ♥ by tejas | copyleft <span class="link"><a href="https://github.com/tejasag">@tejasag</a></span>
 	</div>
 </body>
 
