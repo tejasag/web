@@ -1,0 +1,52 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Tejas Agarwal, a high school sophomore hacking his way through life."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        width: 100%;
+        /* width: 100vw; */
+        font-family: "Arial Black", "Segoe UI", Tahoma, Geneva, Verdana,
+          sans-serif;
+      }
+
+      body {
+        background-color: #131313;
+        background-image: url("/noise.png");
+        background-position: fixed;
+      }
+    </style>
+  </body>
+</html>
